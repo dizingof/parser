@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserV2", "ParserV2\Parser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserV3", "ParserV3\ParserV3.csproj", "{583FD8EF-0219-4949-94C5-D3C811B9D228}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserTel", "ParserTel\ParserTel.csproj", "{5FB62DBE-285A-4314-898A-3E521440B090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{583FD8EF-0219-4949-94C5-D3C811B9D228}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{583FD8EF-0219-4949-94C5-D3C811B9D228}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{583FD8EF-0219-4949-94C5-D3C811B9D228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB62DBE-285A-4314-898A-3E521440B090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB62DBE-285A-4314-898A-3E521440B090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB62DBE-285A-4314-898A-3E521440B090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB62DBE-285A-4314-898A-3E521440B090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
