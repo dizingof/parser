@@ -47,13 +47,14 @@ namespace ParserV3
                 foreach (var item in massivId)
                 {
                     richTextBox2.Text += item + "\r\n";
+                    string writePath = @"C:\SomeDir\hta.txt";
+                    using (StreamWriter sw = new StreamWriter(writePath, true, Encoding.Default))
+                    {
+                        sw.WriteLine(item);
+                    }
 
                 }
-                string writePath = @"C:\SomeDir\hta.txt";
-                using (StreamWriter sw = new StreamWriter(writePath, true, Encoding.Default))
-                {
-                    sw.WriteLine(richTextBox2.Text);
-                }
+                
                 Random randomValue = new Random();
                 var valueSleep = randomValue.Next(5000, 20000);
                 
