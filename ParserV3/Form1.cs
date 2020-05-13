@@ -23,14 +23,17 @@ namespace ParserV3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ZapuskApp();
+        }
+
+        private async Task  ZapuskApp()
+        {
             int count = 2200;
-           
+
+            
             for (int i = 0; i < count; i++)
             {
-                
-
-
-
+                textBox1.Text = i.ToString();
                 string myUrl = $"https://developers.ria.com/auto/search?api_key=F8dBEnGN8H9LmXtgConMAp9QH85TbP3Dh6lUaCV5&countpage=100&page={i}";
                 WebRequest requestGET = WebRequest.Create(myUrl);
                 WebResponse response = requestGET.GetResponse();
@@ -52,9 +55,17 @@ namespace ParserV3
                     sw.WriteLine(richTextBox2.Text);
                 }
                 Random randomValue = new Random();
-                var valueSleep = randomValue.Next(5000, 15000);
-                Thread.Sleep(valueSleep);
+                var valueSleep = randomValue.Next(5000, 20000);
+                
+                Task task = Task.Delay(valueSleep);
+                await task;
+                
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
