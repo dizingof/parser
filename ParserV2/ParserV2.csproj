@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34EEBA25-27A7-4BDA-9A9E-3EE964BF8DCF}</ProjectGuid>
+    <ProjectGuid>{BC687E53-3C07-4823-8440-7F94A92C177E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Parser</RootNamespace>
-    <AssemblyName>Parser</AssemblyName>
+    <RootNamespace>ParserV2</RootNamespace>
+    <AssemblyName>ParserV2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,29 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Additional.cs" />
-    <Compile Include="AdditionalParams.cs" />
-    <Compile Include="All.cs" />
-    <Compile Include="Cleaned.cs" />
-    <Compile Include="Converter.cs" />
-    <Compile Include="Datum.cs" />
-    <Compile Include="DecodeArrayConverter.cs" />
-    <Compile Include="ExchangeFilter.cs" />
+    <Compile Include="AdditionalParametrs.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ParseStringConverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Result.cs" />
-    <Compile Include="SearchParams.cs" />
-    <Compile Include="SearchResult.cs" />
     <Compile Include="SearchResultClass.cs" />
-    <Compile Include="SearchResultCommon.cs" />
-    <Compile Include="TypeEnumConverter.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
